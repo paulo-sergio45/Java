@@ -1,0 +1,16 @@
+O problema deve ser resolvido conforme descricao do Tanenbaum (pag. 92 e 93)
+segundo a qual o maior numero de filosofos podem comer ao mesmo tempo (maximo 
+paralelismo), nao deve haver possibilidade de deadlock ou de inaniçao para 
+algum filosofo.
+
+Resolver de tres maneiras:
+1- usando synchronized
+2- usando monitor (Condition, Lock)
+3- criando uma classe Semaforo com ArrayBlockingQueue
+
+Como testar a solucao:
+Uma parte importante e definir qual e a regiao critica do codigo.
+Para testar se a sua solucao esta funcionando corretamente vc deve
+comentar os "ifs" de pegaGarfo(...) e largaGarfo(...) e verificar se
+estrategia de sincronismo esta garantindo que qualquer garfo so sera 
+pego se nao estiver com nenhum filosofo.
